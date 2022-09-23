@@ -14,8 +14,10 @@ import org.bson.Document;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.*;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.regex.Pattern;
 
 public class Table2MongoDB {
@@ -31,7 +33,7 @@ public class Table2MongoDB {
         // drop整个库
         database.drop();
         // 遍历文件夹内的文件
-        for (File f : file.listFiles()) {
+        for (File f : Objects.requireNonNull(file.listFiles())) {
             // 记录开始时间
             long start = System.currentTimeMillis();
             // 调用执行
@@ -48,10 +50,10 @@ public class Table2MongoDB {
     // 处理xlsx文件
     public static void xlsx2Mongo(@NotNull File file) throws IOException {
         // 获取连接
-        MongoCollection col = getCol(file);
+        MongoCollection<Document> col = getCol(file);
 
         // 字节流
-        InputStream fis = new FileInputStream(file);
+        InputStream fis = Files.newInputStream(file.toPath());
         // 读取整个Excel
         XSSFWorkbook sheets = new XSSFWorkbook(fis);
         // 获取第一个Sheet
@@ -103,7 +105,7 @@ public class Table2MongoDB {
     // 处理csv文件
     public static void csv2Mongo(@NotNull File file) throws Exception {
         // 获取链接
-        MongoCollection col = getCol(file);
+        MongoCollection<Document> col = getCol(file);
         // 字节流
         FileInputStream fin = new FileInputStream(file);
         // 字符流
@@ -143,14 +145,13 @@ public class Table2MongoDB {
     }
 
     // 获取链接
-    @NotNull
-    private static MongoCollection getCol(@NotNull File file) {
+    private static MongoCollection<Document> getCol(@NotNull File file) {
         // 获取文件名
         String name = file.getName();
         // 定义集合名
         String id = name.substring(0, name.lastIndexOf("."));
         // 链接集合
-        MongoCollection col = database.getCollection("NO" + id);
+        MongoCollection<Document> col = database.getCollection("NO" + id);
         //　drop，便于测试
         col.drop();
         return col;
@@ -165,7 +166,7 @@ public class Table2MongoDB {
 
     // 简单判断编码 cp:https://blog.csdn.net/m0_48983233/article/details/122893008
     public static String codeString(@NotNull File file) throws Exception {
-        BufferedInputStream bin = new BufferedInputStream(new FileInputStream(file));
+        BufferedInputStream bin = new BufferedInputStream(Files.newInputStream(file.toPath()));
         int p = (bin.read() << 8) + bin.read();
         bin.close();
         String code;

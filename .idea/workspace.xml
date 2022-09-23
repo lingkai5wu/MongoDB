@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb7dfdb9-0a39-4ecf-90d8-ebb8e099cebe" name="变更" comment="rename">
+    <list default="true" id="fb7dfdb9-0a39-4ecf-90d8-ebb8e099cebe" name="变更" comment="update: csv空则不插入">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/Table2MongoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/Table2MongoDB.java" afterDir="false" />
     </list>
@@ -150,7 +150,8 @@
       <workItem from="1663837159738" duration="277000" />
       <workItem from="1663837846778" duration="815000" />
       <workItem from="1663892926678" duration="17506000" />
-      <workItem from="1663917355467" duration="112000" />
+      <workItem from="1663917355467" duration="285000" />
+      <workItem from="1663917860644" duration="230000" />
     </task>
     <task id="LOCAL-00001" summary="可行版本">
       <created>1663911099375</created>
@@ -173,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663917033812</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update: csv空则不插入">
+      <created>1663917545051</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663917545051</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,10 +199,15 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="可行版本" />
     <MESSAGE value="csv可行版本" />
     <MESSAGE value="rename" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename" />
+    <MESSAGE value="update: csv空则不插入" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: csv空则不插入" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
