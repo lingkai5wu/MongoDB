@@ -3,6 +3,8 @@ package cn.lingkai5wu;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvException;
 import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -10,13 +12,12 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.bson.Document;
 import org.jetbrains.annotations.NotNull;
+import org.junit.jupiter.api.Test;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class MongoDBUtil {
     // 链接服务
@@ -24,27 +25,33 @@ public class MongoDBUtil {
     // 链接库
     static MongoDatabase database = client.getDatabase("test");
 
-    public static void main(String[] args) throws IOException {
-        // CSV文件流
+    public static void main(String[] args) throws Exception {
         // 使用相对路径，相对路径的起点为项目所在的路径
-        File file = new File("data/2020410202.xlsx");
-        xlsx2Mongo(file);
+        // CSV文件流 加入文件夹
+        File file = new File("data");
+        // drop整个库
+        database.drop();
+        // 遍历文件夹内的文件
+        for (File f : file.listFiles()) {
+            // 记录开始时间
+            long start = System.currentTimeMillis();
+            // 调用执行
+            if (f.getName().endsWith("csv")) {
+                csv2Mongo(f);
+            } else {
+                xlsx2Mongo(f);
+            }
+            // 输出耗时
+            System.out.println(f.getName() + "\t" + (System.currentTimeMillis() - start) + "ms");
+        }
     }
 
+    // 处理xlsx文件
     public static void xlsx2Mongo(@NotNull File file) throws IOException {
-        // 获取文件名
-        String name = file.getName();
-        // 定义集合名
-        String id = name.substring(0, name.lastIndexOf("."));
-        // 链接集合
-        MongoCollection col = database.getCollection("DB" + id);
-        //　drop，便于测试
-        col.drop();
-        // 输出开始信息
-        System.out.print("正在处理: " + name);
-        long start = System.currentTimeMillis();
+        // 获取连接
+        MongoCollection col = getCol(file);
 
-        // 输入流
+        // 字节流
         InputStream fis = new FileInputStream(file);
         // 读取整个Excel
         XSSFWorkbook sheets = new XSSFWorkbook(fis);
@@ -92,6 +99,94 @@ public class MongoDBUtil {
         }
         // 将List中所有Document全部加入到数据库
         col.insertMany(list);
-        System.out.println("\t|\t完成，耗时 " + (System.currentTimeMillis() - start) + "ms");
+    }
+
+    // 处理csv文件
+    public static void csv2Mongo(@NotNull File file) throws Exception {
+        // 获取链接
+        MongoCollection col = getCol(file);
+        // 字节流
+        FileInputStream fin = new FileInputStream(file);
+        // 字符流
+        Reader reader = new InputStreamReader(fin, codeString(file));
+        // 表头 即字段名
+        String[] keys;
+        // csv的Reader
+        CSVReader csvReader = new CSVReader(reader);
+        // 定义容器
+        List<String[]> list;
+        try {
+            // 读入所需表头和数据区域内容
+            keys = csvReader.readNext();
+            list = csvReader.readAll();
+        } catch (CsvException e) {
+            throw new RuntimeException(e);
+        }
+
+        // 字段数
+        int n = keys.length;
+        // 构造Document的容器
+        List<Document> documents = new ArrayList<>(list.size());
+        for (String[] ss : list) {
+            // 构造当前Document
+            Document cur = new Document();
+            for (int i = 0; i < n; i++) {
+                // 判断是否为数值类型，数值类型使用Double，非数值使用String
+                cur.append(keys[i], isNumeric(ss[i]) ? Double.valueOf(ss[i]) : ss[i]);
+            }
+            // 加入到容器中
+            documents.add(cur);
+        }
+        // 全部插入到数据库
+        col.insertMany(documents);
+    }
+
+    // 获取链接
+    @NotNull
+    private static MongoCollection getCol(@NotNull File file) {
+        // 获取文件名
+        String name = file.getName();
+        // 定义集合名
+        String id = name.substring(0, name.lastIndexOf("."));
+        // 链接集合
+        MongoCollection col = database.getCollection("NO" + id);
+        //　drop，便于测试
+        col.drop();
+        return col;
+    }
+
+    private static final Pattern NUMBER_PATTERN = Pattern.compile("-?\\d+(\\.\\d+)?");
+
+    // 正则表达式判断是否为数字 cp:https://blog.csdn.net/mryang125/article/details/113146057
+    public static boolean isNumeric(String str) {
+        return str != null && NUMBER_PATTERN.matcher(str).matches();
+    }
+
+    // 简单判断编码 cp:https://blog.csdn.net/m0_48983233/article/details/122893008
+    public static String codeString(@NotNull File file) throws Exception {
+        BufferedInputStream bin = new BufferedInputStream(new FileInputStream(file));
+        int p = (bin.read() << 8) + bin.read();
+        bin.close();
+        String code;
+        switch (p) {
+            case 0xefbb:
+                code = "UTF-8";
+                break;
+            case 0xfffe:
+                code = "Unicode";
+                break;
+            case 0xfeff:
+                code = "UTF-16BE";
+                break;
+            default:
+                code = "GBK";
+        }
+        return code;
+    }
+
+    @Test
+    public void testXlsx2Mongo() throws Exception {
+        File file = new File("data/2020410202.csv");
+        csv2Mongo(file);
     }
 }

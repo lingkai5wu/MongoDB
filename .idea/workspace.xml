@@ -4,123 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb7dfdb9-0a39-4ecf-90d8-ebb8e099cebe" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/1820410131.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/1820410249.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020200244.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020300127.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020300233.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020300234.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020300318.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410101.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410103.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410105.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410106.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410107.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410108.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410109.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410110.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410111.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410112.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410113.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410114.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410115.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410116.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410117.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410118.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410119.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410120.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410121.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410122.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410123.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410124.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410125.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410126.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410127.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410128.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410129.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410130.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410131.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410132.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410133.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410134.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410135.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410136.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410137.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410138.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410139.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410140.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410142.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410143.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410144.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410145.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410147.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410149.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410150.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410201.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410202.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410202.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410203.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410204.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410205.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410206.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410207.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410208.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410209.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410210.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410211.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410212.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410213.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410214.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410215.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410216.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410217.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410218.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410219.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410220.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410221.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410222.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410223.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410224.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410225.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410226.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410227.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410228.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410229.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410230.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410231.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410232.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410233.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410234.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410235.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410236.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410237.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410238.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410239.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410240.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410241.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410242.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410243.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410244.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410245.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410246.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410248.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410249.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020410250.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020420227.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020420236.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020420238.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020420244.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020620142.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2020710237.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/MongoDBUtil.java" afterDir="false" />
+    <list default="true" id="fb7dfdb9-0a39-4ecf-90d8-ebb8e099cebe" name="变更" comment="可行版本">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/MongoDBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/MongoDBUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,8 +43,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last.edited.regexp": "abc.html",
+    "last.edited.regexp": "",
     "last_opened_file_path": "C:/Users/lingk/IdeaProjects/MongoDB/src/main/java/cn/lingkai5wu",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
@@ -180,6 +71,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="csvTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="csvTest" />
+      <module name="MongoDB" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MongoDBUtil" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MongoDB" />
       <extension name="coverage">
@@ -195,7 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoDBUtil.testCsv2Mongo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MongoDBUtil.testXlsx2Mongo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MongoDB" />
       <extension name="coverage">
         <pattern>
@@ -205,23 +103,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="cn.lingkai5wu" />
       <option name="MAIN_CLASS_NAME" value="cn.lingkai5wu.MongoDBUtil" />
-      <option name="METHOD_NAME" value="testCsv2Mongo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MongoDBUtil.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MongoDB" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.lingkai5wu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.lingkai5wu" />
-      <option name="MAIN_CLASS_NAME" value="cn.lingkai5wu.MongoDBUtil" />
-      <option name="METHOD_NAME" value="testDelete" />
+      <option name="METHOD_NAME" value="testXlsx2Mongo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -246,10 +128,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.MongoDBUtil" />
+        <item itemvalue="JUnit.MongoDBUtil.testXlsx2Mongo" />
+        <item itemvalue="应用程序.csvTest" />
         <item itemvalue="JUnit.MongoDBUtil.xlsx2Mongo" />
         <item itemvalue="JUnit.MongoDBUtil" />
-        <item itemvalue="JUnit.MongoDBUtil.testCsv2Mongo" />
-        <item itemvalue="JUnit.MongoDBUtil.testDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -269,8 +151,16 @@
       <workItem from="1663832265555" duration="4314000" />
       <workItem from="1663837159738" duration="277000" />
       <workItem from="1663837846778" duration="815000" />
-      <workItem from="1663892926678" duration="11484000" />
+      <workItem from="1663892926678" duration="17092000" />
     </task>
+    <task id="LOCAL-00001" summary="可行版本">
+      <created>1663911099375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663911099375</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,5 +179,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="可行版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="可行版本" />
   </component>
 </project>
