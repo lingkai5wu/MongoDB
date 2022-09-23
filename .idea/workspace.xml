@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb7dfdb9-0a39-4ecf-90d8-ebb8e099cebe" name="变更" comment="csv可行版本">
+    <list default="true" id="fb7dfdb9-0a39-4ecf-90d8-ebb8e099cebe" name="变更" comment="rename">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/MongoDBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/Table2MongoDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/Table2MongoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/Table2MongoDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,22 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last.edited.regexp": "",
-    "last_opened_file_path": "C:/Users/lingk/IdeaProjects/MongoDB/src/main/java/cn/lingkai5wu",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last.edited.regexp&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lingk/IdeaProjects/MongoDB/src/main/java/cn/lingkai5wu&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lingk\IdeaProjects\MongoDB\src\main\java\cn\lingkai5wu" />
@@ -150,7 +149,8 @@
       <workItem from="1663832265555" duration="4314000" />
       <workItem from="1663837159738" duration="277000" />
       <workItem from="1663837846778" duration="815000" />
-      <workItem from="1663892926678" duration="17420000" />
+      <workItem from="1663892926678" duration="17506000" />
+      <workItem from="1663917355467" duration="112000" />
     </task>
     <task id="LOCAL-00001" summary="可行版本">
       <created>1663911099375</created>
@@ -166,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663916779927</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rename">
+      <created>1663917033812</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663917033812</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +194,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="可行版本" />
     <MESSAGE value="csv可行版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="csv可行版本" />
+    <MESSAGE value="rename" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename" />
   </component>
 </project>

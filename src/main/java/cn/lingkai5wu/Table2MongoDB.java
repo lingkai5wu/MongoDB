@@ -12,7 +12,6 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.bson.Document;
 import org.jetbrains.annotations.NotNull;
-import org.junit.jupiter.api.Test;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -131,8 +130,10 @@ public class Table2MongoDB {
             // 构造当前Document
             Document cur = new Document();
             for (int i = 0; i < n; i++) {
-                // 判断是否为数值类型，数值类型使用Double，非数值使用String
-                cur.append(keys[i], isNumeric(ss[i]) ? Double.valueOf(ss[i]) : ss[i]);
+                // 判断是否为数值类型，数值类型使用Double，非数值使用String，空则跳过
+                if (!ss[i].isEmpty()) {
+                    cur.append(keys[i], isNumeric(ss[i]) ? Double.valueOf(ss[i]) : ss[i]);
+                }
             }
             // 加入到容器中
             documents.add(cur);
@@ -182,11 +183,5 @@ public class Table2MongoDB {
                 code = "GBK";
         }
         return code;
-    }
-
-    @Test
-    public void testXlsx2Mongo() throws Exception {
-        File file = new File("data/2020410202.csv");
-        csv2Mongo(file);
     }
 }
