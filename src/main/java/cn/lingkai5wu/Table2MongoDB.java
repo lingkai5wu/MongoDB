@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-public class MongoDBUtil {
+public class Table2MongoDB {
     // 链接服务
     static MongoClient client = new MongoClient("localhost", 27017);
     // 链接库
