@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb7dfdb9-0a39-4ecf-90d8-ebb8e099cebe" name="变更" comment="update: csv空则不插入">
-      <change afterPath="$PROJECT_DIR$/作业报告.assets/Snipaste_2022-09-28_20-48-53.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/作业报告.assets/Snipaste_2022-09-28_20-50-13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/作业报告.assets/Snipaste_2022-09-28_20-50-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/作业报告.assets/Snipaste_2022-09-28_20-50-43.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/作业报告.assets/Snipaste_2022-09-28_20-51-17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/作业报告.assets/Snipaste_2022-09-28_20-55-22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/作业报告.assets/Snipaste_2022-09-28_20-55-55.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/作业报告.md" afterDir="false" />
+    <list default="true" id="fb7dfdb9-0a39-4ecf-90d8-ebb8e099cebe" name="变更" comment="add: 作业报告">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/作业报告.md" beforeDir="false" afterPath="$PROJECT_DIR$/作业报告.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,23 +35,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last.edited.regexp": "",
-    "last_opened_file_path": "C:/Users/lingk/IdeaProjects/MongoDB/src/main/java/cn/lingkai5wu",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last.edited.regexp&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lingk/IdeaProjects/MongoDB/src/main/java/cn/lingkai5wu&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lingk\IdeaProjects\MongoDB\src\main\java\cn\lingkai5wu" />
@@ -86,7 +79,9 @@
       <workItem from="1663918861603" duration="1311000" />
       <workItem from="1663922262965" duration="22000" />
       <workItem from="1664356317291" duration="2705000" />
-      <workItem from="1664371140578" duration="86000" />
+      <workItem from="1664371140578" duration="187000" />
+      <workItem from="1664371621048" duration="66000" />
+      <workItem from="1664371815216" duration="190000" />
     </task>
     <task id="LOCAL-00001" summary="可行版本">
       <created>1663911099375</created>
@@ -123,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663918125019</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add: 作业报告">
+      <created>1664371318342</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664371318342</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +150,8 @@
     <MESSAGE value="rename" />
     <MESSAGE value="update: csv空则不插入" />
     <MESSAGE value="fix 一些警告" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix 一些警告" />
+    <MESSAGE value="add: 作业报告" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: 作业报告" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
