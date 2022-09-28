@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb7dfdb9-0a39-4ecf-90d8-ebb8e099cebe" name="变更" comment="update: csv空则不插入">
+    <list default="true" id="fb7dfdb9-0a39-4ecf-90d8-ebb8e099cebe" name="变更" comment="fix 一些警告">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/Table2MongoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lingkai5wu/Table2MongoDB.java" afterDir="false" />
     </list>
@@ -151,7 +151,10 @@
       <workItem from="1663837846778" duration="815000" />
       <workItem from="1663892926678" duration="17506000" />
       <workItem from="1663917355467" duration="285000" />
-      <workItem from="1663917860644" duration="230000" />
+      <workItem from="1663917860644" duration="387000" />
+      <workItem from="1663918861603" duration="1311000" />
+      <workItem from="1663922262965" duration="22000" />
+      <workItem from="1664356317291" duration="2705000" />
     </task>
     <task id="LOCAL-00001" summary="可行版本">
       <created>1663911099375</created>
@@ -181,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663917545051</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix 一些警告">
+      <created>1663918125019</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663918125019</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +215,8 @@
     <MESSAGE value="csv可行版本" />
     <MESSAGE value="rename" />
     <MESSAGE value="update: csv空则不插入" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: csv空则不插入" />
+    <MESSAGE value="fix 一些警告" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix 一些警告" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -5,7 +5,6 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
-import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -87,11 +86,17 @@ public class Table2MongoDB {
                 // 转换为字符串
                 String s = cur.toString();
                 // 判断是否为数值类型，数值类型为0，且需要对日期进行特判（日期会被判断为数值，可恶）
-                if (cur.getCellType() == 0 && !DateUtil.isCellDateFormatted(cur)) {
-                    // 为数值，转换为double加入到Document中
+                // 尝试不使用IPO
+//                if (cur.getCellType() == 0 && !DateUtil.isCellDateFormatted(cur)) {
+//                    // 为数值，转换为double加入到Document中
+//                    curDocument.append(keys[j], Double.valueOf(s));
+//                } else {
+//                    // 为字符串，转为字符串加入
+//                    curDocument.append(keys[j], s);
+//                }
+                if (isNumeric(s)) {
                     curDocument.append(keys[j], Double.valueOf(s));
                 } else {
-                    // 为字符串，转为字符串加入
                     curDocument.append(keys[j], s);
                 }
             }
